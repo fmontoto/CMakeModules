@@ -33,7 +33,7 @@ endif()
 
 include(CheckCSourceCompiles)
 set(CMAKE_REQUIRED_LIBRARIES ${CONFIG_LIBRARY})
-check_c_source_compiles("int main( {return 0;}" CONFIG_LINKS_SOLO)
+check_c_source_compiles("int main() {return 0;}" CONFIG_LINKS_SOLO)
 set(CMAKE_REQUIRED_LIBRARIES)
 
 include(CheckFunctionExists)

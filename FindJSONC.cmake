@@ -35,7 +35,7 @@ endif()
 
 include(CheckCSourceCompiles)
 set(CMAKE_REQUIRED_LIBRARIES ${JSONC_LIBRARY})
-check_c_source_compiles("int main( {return 0;}" JSONC_LINKS_SOLO)
+check_c_source_compiles("int main() {return 0;}" JSONC_LINKS_SOLO)
 set(CMAKE_REQUIRED_LIBRARIES)
 
 include(CheckFunctionExists)
