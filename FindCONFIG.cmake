@@ -7,7 +7,7 @@ find_path(
 find_path(CONFIG_INCLUDE_DIR
     NAMES
         libconfig.h
-    HINTS
+    HINT
         ${CONFIG_ROOT_DIR}/include
 )
 
